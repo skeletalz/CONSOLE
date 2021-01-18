@@ -81,7 +81,6 @@ Bind.Font = Enum.Font.SourceSans
 Bind.Text = ""
 Bind.TextColor3 = Color3.fromRGB(0, 0, 0)
 Bind.TextSize = 14.000
-
 Bindtext.Name = "Bind text"
 Bindtext.Parent = Bind
 Bindtext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -109,7 +108,7 @@ Bind_2.Text = "RightCtrl"
 Bind_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Bind_2.TextSize = 6.000
 Bind_2.TextWrapped = true
-
+local bround = Instance.new("UICorner",Bind_2)bround.CornerRadius = Vector2(0,8)
 Sidebar.Name = "Sidebar"
 Sidebar.Parent = Main
 Sidebar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -279,6 +278,7 @@ local Title_2 = Instance.new("TextLabel")
 		local UIListLayout_4 = Instance.new("UIListLayout")
 		local UIPadding_2 = Instance.new("UIPadding")
 		Section.Name = name
+		local bround1 = Instance.new("UICorner",Section)bround1.CornerRadius = Vector2(0,6)
 		for r,v in pairs(R:GetChildren()) do
 			for l,d in pairs(L:GetChildren()) do
 				if r-2 > l-2 then
@@ -381,7 +381,7 @@ local Title_2 = Instance.new("TextLabel")
 			ToggleBTN.Text = ""
 			ToggleBTN.TextColor3 = Color3.fromRGB(255, 0, 0)
 			ToggleBTN.TextSize = 16.000
-
+			local bround2 = Instance.new("UICorner",ToggleBTN)bround2.CornerRadius = Vector2(0,6)
 			ToggleBTNiner.Name = "ToggleBTNiner"
 			ToggleBTNiner.Parent = ToggleBTN
 			ToggleBTNiner.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -394,7 +394,7 @@ local Title_2 = Instance.new("TextLabel")
 			ToggleBTNiner.Text = ""
 			ToggleBTNiner.TextColor3 = Color3.fromRGB(255, 0, 0)
 			ToggleBTNiner.TextSize = 16.000
-
+			local bround3 = Instance.new("UICorner",ToggleBTNiner)bround3.CornerRadius = Vector2(0,6)
 			local function click(t)
 				location[flag] = not location[flag];
 				callback(location[flag])
@@ -542,7 +542,7 @@ local Title_2 = Instance.new("TextLabel")
 			Box_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 			Box_2.TextSize = 6.000
 			Box_2.TextWrapped = true
-			
+			local bround4 = Instance.new("UICorner",Box_2)bround4.CornerRadius = Vector2(0,6)
 			Box_2.FocusLost:connect(function(e)
 				local old = location[flag];
 				if type == "number" then
@@ -619,7 +619,7 @@ local Title_2 = Instance.new("TextLabel")
 			DropBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
 			DropBtn.TextSize = 6.000
 			DropBtn.TextWrapped = true
-
+			local bround5 = Instance.new("UICorner",DropBtn)bround5.CornerRadius = Vector2(0,6)
 			List.Name = "List"
 			List.Parent = DropBtn
 			List.Active = true
@@ -631,7 +631,7 @@ local Title_2 = Instance.new("TextLabel")
 			List.ZIndex = 4
 			List.CanvasSize = UDim2.new(0, 0, 1, 0)
 			List.ScrollBarThickness = 0
-
+			local bround6 = Instance.new("UICorner",List)bround6.CornerRadius = Vector2(0,6)
 			UIListLayout_5.Parent = List
 			UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
 			local togged = false
@@ -744,7 +744,7 @@ local Title_2 = Instance.new("TextLabel")
 			Slider_2.AutoButtonColor = false
 			Slider_2.Text = ""
 			Slider_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-
+			local bround7 = Instance.new("UICorner",Slider_2)bround7.CornerRadius = Vector2(0,6)
 			Inner.Name = "Inner"
 			Inner.Parent = Slider_2
 			Inner.Active = false
@@ -754,6 +754,7 @@ local Title_2 = Instance.new("TextLabel")
 			Inner.Size = UDim2.new(0, 0, 1, 0)
 			Inner.AutoButtonColor = false
 			Inner.Text = ""
+			local bround8 = Instance.new("UICorner",Inner)bround8.CornerRadius = Vector2(0,6)
 			local Number = Inner
 			local mouse = game.Players.LocalPlayer:GetMouse()
 			local uis = game:GetService("UserInputService")
@@ -856,7 +857,7 @@ local Title_2 = Instance.new("TextLabel")
 			Bind_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 			Bind_4.TextSize = 6.000
 			Bind_4.TextWrapped = true
-
+			local bround9 = Instance.new("UICorner",Bind_4)bround9.CornerRadius = Vector2(0,6)
 			local binding = false
 			local banned = {
 				Return = true;
