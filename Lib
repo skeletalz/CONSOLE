@@ -1,0 +1,1143 @@
+local library = {callbacks={},toggled=true,binds={}};
+
+local C0NLE = Instance.new("ScreenGui")
+local Main = Instance.new("ImageLabel")
+local Top = Instance.new("ImageLabel")
+local Title = Instance.new("TextLabel")
+local Fix = Instance.new("Frame")
+local Bind = Instance.new("TextButton")
+local Bindtext = Instance.new("TextLabel")
+local Bind_2 = Instance.new("TextButton")
+local Sidebar = Instance.new("ImageLabel")
+local Fix_2 = Instance.new("Frame")
+local Fix_3 = Instance.new("Frame")
+local Menu = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local UIPadding = Instance.new("UIPadding")
+local Button = Instance.new("TextButton")
+local peepeepoopoo = Instance.new("ImageLabel")
+local effect = Instance.new("ImageLabel")
+local Pages = Instance.new("Frame")
+local Watermark = Instance.new("TextLabel")
+
+C0NLE.Name = "C0N$ØLE"
+C0NLE.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+C0NLE.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = C0NLE
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.BorderSizePixel = 0
+Main.ClipsDescendants = true
+Main.Position = UDim2.new(0.0584496893, 0, 0.343741804, 0)
+Main.Size = UDim2.new(0, 675, 0, 353)
+Main.Image = "rbxassetid://3570695787"
+Main.ImageColor3 = Color3.fromRGB(23, 28, 45)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.120
+
+Top.Name = "Top"
+Top.Parent = Main
+Top.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Top.BackgroundTransparency = 1.000
+Top.Size = UDim2.new(0, 675, 0, 19)
+Top.Image = "rbxassetid://3570695787"
+Top.ImageColor3 = Color3.fromRGB(33, 41, 66)
+Top.ScaleType = Enum.ScaleType.Slice
+Top.SliceCenter = Rect.new(100, 100, 100, 100)
+Top.SliceScale = 0.080
+
+Title.Name = "Title"
+Title.Parent = Top
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 200, 0, 18)
+Title.ZIndex = 3
+Title.Font = Enum.Font.Highway
+Title.Text = " C0N$ØLE"
+Title.TextColor3 = Color3.fromRGB(114, 118, 125)
+Title.TextSize = 19.000
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+Fix.Name = "Fix"
+Fix.Parent = Top
+Fix.BackgroundColor3 = Color3.fromRGB(33, 41, 66)
+Fix.BorderSizePixel = 0
+Fix.Position = UDim2.new(0, 0, 0.5, 0)
+Fix.Size = UDim2.new(1, 0, 0, 9)
+
+Bind.Name = "Bind"
+Bind.Parent = Top
+Bind.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bind.BackgroundTransparency = 1.000
+Bind.BorderSizePixel = 0
+Bind.Position = UDim2.new(0.718518436, 0, 0, 0)
+Bind.Size = UDim2.new(0.281481564, 0, -0.263157904, 24)
+Bind.AutoButtonColor = false
+Bind.Font = Enum.Font.SourceSans
+Bind.Text = ""
+Bind.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bind.TextSize = 14.000
+
+Bindtext.Name = "Bind text"
+Bindtext.Parent = Bind
+Bindtext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bindtext.BackgroundTransparency = 1.000
+Bindtext.BorderSizePixel = 0
+Bindtext.Size = UDim2.new(0, 143, 1, 0)
+Bindtext.ZIndex = 3
+Bindtext.Font = Enum.Font.Highway
+Bindtext.Text = "Open/Close"
+Bindtext.TextColor3 = Color3.fromRGB(214, 222, 234)
+Bindtext.TextSize = 12.000
+Bindtext.TextXAlignment = Enum.TextXAlignment.Left
+
+Bind_2.Name = "Bind"
+Bind_2.Parent = Bindtext
+Bind_2.Active = false
+Bind_2.AnchorPoint = Vector2.new(0, 0.5)
+Bind_2.BackgroundColor3 = Color3.fromRGB(75, 91, 148)
+Bind_2.BorderSizePixel = 0
+Bind_2.Position = UDim2.new(0.629999995, 0, 0.474000007, 0)
+Bind_2.Selectable = false
+Bind_2.Size = UDim2.new(0, 100, 1, 0)
+Bind_2.AutoButtonColor = false
+Bind_2.Text = "RightCtrl"
+Bind_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bind_2.TextSize = 6.000
+Bind_2.TextWrapped = true
+
+Sidebar.Name = "Sidebar"
+Sidebar.Parent = Main
+Sidebar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sidebar.BackgroundTransparency = 1.000
+Sidebar.Position = UDim2.new(0, 0, 0.0538243614, 0)
+Sidebar.Size = UDim2.new(0, 127, 0, 334)
+Sidebar.Image = "rbxassetid://3570695787"
+Sidebar.ImageColor3 = Color3.fromRGB(33, 41, 66)
+Sidebar.ScaleType = Enum.ScaleType.Slice
+Sidebar.SliceCenter = Rect.new(100, 100, 100, 100)
+Sidebar.SliceScale = 0.080
+
+Fix_2.Name = "Fix"
+Fix_2.Parent = Sidebar
+Fix_2.BackgroundColor3 = Color3.fromRGB(33, 41, 66)
+Fix_2.BorderSizePixel = 0
+Fix_2.Position = UDim2.new(0, 0, -0.00150150061, 0)
+Fix_2.Size = UDim2.new(1, 0, 0, 9)
+
+Fix_3.Name = "Fix"
+Fix_3.Parent = Sidebar
+Fix_3.BackgroundColor3 = Color3.fromRGB(33, 41, 66)
+Fix_3.BorderSizePixel = 0
+Fix_3.Position = UDim2.new(0.587155938, 0, 0.971471488, 0)
+Fix_3.Size = UDim2.new(0.412844032, 0, 0, 9)
+
+Menu.Name = "Menu"
+Menu.Parent = Sidebar
+Menu.Active = true
+Menu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Menu.BackgroundTransparency = 1.000
+Menu.BorderColor3 = Color3.fromRGB(23, 28, 45)
+Menu.BorderSizePixel = 0
+Menu.Position = UDim2.new(0, 0, 0.0239520967, 0)
+Menu.Size = UDim2.new(0, 127, 0, 301)
+Menu.ScrollBarThickness = 6
+
+UIListLayout.Parent = Menu
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 2)
+
+UIPadding.Parent = Menu
+
+Button.Name = "Button"
+Button.Parent = Sidebar
+Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button.BackgroundTransparency = 1.000
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0, 0, 0.92814374, 0)
+Button.Size = UDim2.new(1, 0, 0, 24)
+Button.ZIndex = 4
+Button.AutoButtonColor = false
+Button.Font = Enum.Font.Highway
+Button.Text = "Join Discord"
+Button.TextColor3 = Color3.fromRGB(206, 214, 227)
+Button.TextSize = 19.000
+
+peepeepoopoo.Name = "peepeepoopoo"
+peepeepoopoo.Parent = Button
+peepeepoopoo.AnchorPoint = Vector2.new(0.5, 0.5)
+peepeepoopoo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+peepeepoopoo.BackgroundTransparency = 1.000
+peepeepoopoo.Position = UDim2.new(0.5, 0, 0.5, 0)
+peepeepoopoo.Size = UDim2.new(1, -8, 1, -4)
+peepeepoopoo.Image = "rbxassetid://3570695787"
+peepeepoopoo.ImageColor3 = Color3.fromRGB(75, 91, 148)
+peepeepoopoo.ScaleType = Enum.ScaleType.Slice
+peepeepoopoo.SliceCenter = Rect.new(100, 100, 100, 100)
+peepeepoopoo.SliceScale = 0.060
+
+effect.Name = "effect"
+effect.Parent = Button
+effect.AnchorPoint = Vector2.new(0.5, 0.5)
+effect.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+effect.BackgroundTransparency = 1.000
+effect.Position = UDim2.new(0.5, 0, 0.5, 0)
+effect.Size = UDim2.new(1, -8, 1, -8)
+effect.Image = "rbxassetid://3570695787"
+effect.ImageColor3 = Color3.fromRGB(75, 91, 148)
+effect.ScaleType = Enum.ScaleType.Slice
+effect.SliceCenter = Rect.new(100, 100, 100, 100)
+effect.SliceScale = 0.060
+Watermark.Name = "Watermark"
+Watermark.Parent = C0NLE
+Watermark.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Watermark.BackgroundTransparency = 1.000
+Watermark.BorderSizePixel = 0
+Watermark.Position = UDim2.new(0.00528455153, 0, -0.000239789762, 0)
+Watermark.Size = UDim2.new(0, 434, 0, 55)
+Watermark.ZIndex = 3
+Watermark.Font = Enum.Font.Highway
+Watermark.Text = "(C0N$ØLE) by TheNonGamerIsHere#4698 / SlaxxF#0001"
+Watermark.TextColor3 = Color3.fromRGB(114, 118, 125)
+Watermark.TextSize = 19.000
+Watermark.TextTransparency = 0.500
+Watermark.TextWrapped = true
+Watermark.TextXAlignment = Enum.TextXAlignment.Left
+function library:Tab(name)
+
+		local Page = Instance.new("TextButton")
+		local Page_2 = Instance.new("ScrollingFrame")
+
+		local R = Instance.new("Frame")
+		local UIListLayout_2 = Instance.new("UIListLayout")
+		local L = Instance.new("Frame")
+		local UIListLayout_3 = Instance.new("UIListLayout")
+
+	Page.Name = name
+	Page.Parent = Menu
+	Page.BackgroundColor3 = Color3.fromRGB(33, 41, 66)
+	Page.BorderSizePixel = 0
+	Page.Size = UDim2.new(0, 127, 0, 26)
+	Page.AutoButtonColor = false
+	Page.Font = Enum.Font.Highway
+	Page.Text =name
+	Page.TextColor3 = Color3.fromRGB(99, 104, 114)
+	Page.TextSize = 16.000
+	Pages.Name = "Pages"
+	Pages.Parent = Main
+	Pages.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Pages.BackgroundTransparency = 1.000
+	Pages.Position = UDim2.new(0.188148141, 0, 0.0538243614, 0)
+	Pages.Size = UDim2.new(0, 548, 0, 333)
+
+	Page_2.Name =name
+	Page_2.Parent = Pages
+	Page_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Page_2.BackgroundTransparency = 1.000
+	Page_2.BorderSizePixel = 0
+	Page_2.ClipsDescendants = true
+	Page_2.Selectable = false
+	Page_2.Size = UDim2.new(0, 548, 0, 333)
+	Page_2.CanvasSize = UDim2.new(0, 0, 1, 0)
+	Page_2.ScrollBarThickness = 6
+	Page_2.Visible = false
+	R.Name = "R"
+	R.Parent = Page_2
+	R.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	R.BackgroundTransparency = 1.000
+	R.BorderColor3 = Color3.fromRGB(27, 42, 53)
+	R.BorderSizePixel = 0
+	R.Position = UDim2.new(0.5, 0, 0.015, 0)
+	R.Size = UDim2.new(0, 270, 8,0)
+	UIListLayout_2.Parent = R
+	UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+	UIListLayout_2.Padding = UDim.new(0, 8)
+	L.Name = "L"
+	L.Parent = Page_2
+	L.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	L.BackgroundTransparency = 1.000
+	L.BorderSizePixel = 0
+	L.Position = UDim2.new(0, 0,  0.015,0)
+	L.Size = UDim2.new(0, 270,  8,0)
+	UIListLayout_3.Parent = L
+	UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+	UIListLayout_3.Padding = UDim.new(0, 8)
+	local UIPadding_3 = Instance.new("UIPadding")
+	UIPadding_3.Parent = L
+	UIPadding_3.PaddingLeft = UDim.new(0, 4)
+	local UIPadding_3 = Instance.new("UIPadding")
+	UIPadding_3.Parent = R
+	UIPadding_3.PaddingLeft = UDim.new(0, 4)
+	local tab = {flags={}}
+	function tab:Section(name)
+local Section = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+		local UIListLayout_4 = Instance.new("UIListLayout")
+		local UIPadding_2 = Instance.new("UIPadding")
+		Section.Name = name
+		for r,v in pairs(R:GetChildren()) do
+			for l,d in pairs(L:GetChildren()) do
+				if r-2 > l-2 then
+					Section.Parent = L
+				elseif r-2 < l-2 then
+					Section.Parent = R   
+				elseif r-2 == l-2 then
+					Section.Parent = L
+				end
+			end
+		end
+		Section.BackgroundColor3 = Color3.fromRGB(35, 43, 70)
+		Section.BorderSizePixel = 0
+		Section.Position = UDim2.new(0.0148148146, 0, 4.63792986e-08, 0)
+		Section.Size = UDim2.new(0, 258, 0, 18)
+
+		Title_2.Name = "Title"
+		Title_2.Parent = Section
+		Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Title_2.BackgroundTransparency = 1.000
+		Title_2.BorderSizePixel = 0
+		Title_2.Position = UDim2.new(-0.000386555999, 0, -0.000229644778, 0)
+		Title_2.Size = UDim2.new(1, 0, 0, 18)
+		Title_2.ZIndex = 3
+		Title_2.Font = Enum.Font.Highway
+		Title_2.Text = name
+		Title_2.TextColor3 = Color3.fromRGB(214, 222, 234)
+		Title_2.TextSize = 22.000
+		UIPadding_2.Parent = Section
+		UIPadding_2.PaddingLeft = UDim.new(0, 4)
+		UIPadding_2.PaddingRight = UDim.new(0, 4)
+		UIListLayout_4.Parent = Section
+		UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+		UIListLayout_4.Padding = UDim.new(0, 6)
+		
+		local sect = {}
+		function sect:Label(text)
+			local Label = Instance.new("TextLabel")
+			Label.Name = text
+			Label.Parent = Section
+			Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Label.BackgroundTransparency = 1.000
+			Label.BorderSizePixel = 0
+			Label.Position = UDim2.new(0.0219474155, 0, 0.366666675, 0)
+			Label.Size = UDim2.new(1, 0, 0, 24)
+			Label.ZIndex = 3
+			Label.Font = Enum.Font.Highway
+			Label.Text = text
+			Label.TextColor3 = Color3.fromRGB(214, 222, 234)
+			Label.TextSize = 12.000
+			Label.TextXAlignment = Enum.TextXAlignment.Right
+			Section.Size = Section.Size + UDim2.new(0,0,0,30)
+			Page_2.CanvasSize = Page_2.CanvasSize + UDim2.new(0,0,0,15)
+		end
+		function sect:Toggle(name,options,callback)
+			local default  = options.default or false;
+			local location = options.location or tab.flags;
+			local flag     = options.flag or "";
+			local callback = callback or function() end;
+
+			location[flag] = default;
+			local Toggle = Instance.new("TextButton")
+			local Slidertext = Instance.new("TextLabel")
+			local ToggleBTN = Instance.new("TextButton")
+			local ToggleBTNiner = Instance.new("TextButton")
+			Toggle.Name = name
+			Toggle.Parent = Section
+			Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Toggle.BackgroundTransparency = 1.000
+			Toggle.BorderSizePixel = 0
+			Toggle.Size = UDim2.new(1, 0, 0, 24)
+			Toggle.AutoButtonColor = false
+			Toggle.Font = Enum.Font.SourceSans
+			Toggle.Text = ""
+			Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+			Toggle.TextSize = 14.000
+
+			Slidertext.Name = "Toggle text"
+			Slidertext.Parent = Toggle
+			Slidertext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Slidertext.BackgroundTransparency = 1.000
+			Slidertext.BorderSizePixel = 0
+			Slidertext.Size = UDim2.new(0, 200, 0, 18)
+			Slidertext.ZIndex = 3
+			Slidertext.Font = Enum.Font.Highway
+			Slidertext.Text = name
+			Slidertext.TextColor3 = Color3.fromRGB(214, 222, 234)
+			Slidertext.TextSize = 12.000
+			Slidertext.TextXAlignment = Enum.TextXAlignment.Left
+
+			ToggleBTN.Name = "ToggleBTN"
+			ToggleBTN.Parent = Toggle
+			ToggleBTN.AnchorPoint = Vector2.new(0, 0.5)
+			ToggleBTN.BackgroundColor3 = Color3.fromRGB(61, 58, 61)
+			ToggleBTN.BorderSizePixel = 0
+			ToggleBTN.Position = UDim2.new(0.887000024, 0, 0.5, 0)
+			ToggleBTN.Size = UDim2.new(0, 24, 0, 24)
+			ToggleBTN.AutoButtonColor = false
+			ToggleBTN.Font = Enum.Font.Highway
+			ToggleBTN.Text = ""
+			ToggleBTN.TextColor3 = Color3.fromRGB(255, 0, 0)
+			ToggleBTN.TextSize = 16.000
+
+			ToggleBTNiner.Name = "ToggleBTNiner"
+			ToggleBTNiner.Parent = ToggleBTN
+			ToggleBTNiner.AnchorPoint = Vector2.new(0.5, 0.5)
+			ToggleBTNiner.BackgroundColor3 = Color3.fromRGB(35, 43, 70)
+			ToggleBTNiner.BorderSizePixel = 0
+			ToggleBTNiner.Position = UDim2.new(0.5, 0, 0.5, 0)
+			ToggleBTNiner.Size = UDim2.new(1, -4, 1, -4)
+			ToggleBTNiner.AutoButtonColor = false
+			ToggleBTNiner.Font = Enum.Font.Highway
+			ToggleBTNiner.Text = ""
+			ToggleBTNiner.TextColor3 = Color3.fromRGB(255, 0, 0)
+			ToggleBTNiner.TextSize = 16.000
+
+			local function click(t)
+				location[flag] = not location[flag];
+				callback(location[flag])
+			end
+			local tog = false
+			local function tween(args)
+				game:GetService("TweenService"):Create(args.object,TweenInfo.new(args.info),args.props):Play()
+			end
+			if default == true then
+				tog = false
+				tween({object=ToggleBTN,info=0.3,props={BackgroundColor3 = Color3.fromRGB(122, 116, 122)}})
+				tween({object=ToggleBTNiner,info=0.3,props={BackgroundColor3 = Color3.fromRGB(61, 58, 61)}})
+			end
+			local function toggle()
+				if tog then tog = false
+					tween({object=ToggleBTN,info=0.3,props={BackgroundColor3 = Color3.fromRGB(122, 116, 122)}})
+					tween({object=ToggleBTNiner,info=0.3,props={BackgroundColor3 = Color3.fromRGB(61, 58, 61)}})
+				else
+					tog = true
+					tween({object=ToggleBTN,info=0.3,props={BackgroundColor3 = Color3.fromRGB(61, 58, 61)}})
+					tween({object=ToggleBTNiner,info=0.3,props={BackgroundColor3 = Color3.fromRGB(35, 43, 70)}})
+				end
+			end
+			Toggle.MouseButton1Click:Connect(function()
+				toggle()
+				click()
+			end)
+			ToggleBTN.MouseButton1Click:Connect(function()
+				toggle()
+				click()
+			end)
+			ToggleBTNiner.MouseButton1Click:Connect(function()
+				toggle()
+				click()
+			end)
+			library.callbacks[flag] = click;
+
+			if location[flag] == true then
+				callback(location[flag])
+			end
+			Section.Size = Section.Size + UDim2.new(0,0,0,30)
+			Page_2.CanvasSize = Page_2.CanvasSize + UDim2.new(0,0,0,15)
+		end
+		function sect:Button(name,callback)
+			callback = callback or function() end;
+			local Button_2 = Instance.new("TextButton")
+			local peepeepoopoo_2 = Instance.new("ImageLabel")
+			local effect_2 = Instance.new("ImageLabel")
+			Button_2.Name = name
+			Button_2.Parent = Section
+			Button_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Button_2.BackgroundTransparency = 1.000
+			Button_2.BorderSizePixel = 0
+			Button_2.Size = UDim2.new(1, 0, 0, 24)
+			Button_2.Text = name
+			Button_2.ZIndex = 4
+			Button_2.AutoButtonColor = false
+			Button_2.Font = Enum.Font.Highway
+			Button_2.TextColor3 = Color3.fromRGB(206, 214, 227)
+			Button_2.TextSize = 19.000
+
+			peepeepoopoo_2.Name = "peepeepoopoo"
+			peepeepoopoo_2.Parent = Button_2
+			peepeepoopoo_2.AnchorPoint = Vector2.new(0.5, 0.5)
+			peepeepoopoo_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			peepeepoopoo_2.BackgroundTransparency = 1.000
+			peepeepoopoo_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+			peepeepoopoo_2.Size = UDim2.new(1, -8, 1, -4)
+			peepeepoopoo_2.Image = "rbxassetid://3570695787"
+			peepeepoopoo_2.ImageColor3 = Color3.fromRGB(75, 91, 148)
+			peepeepoopoo_2.ScaleType = Enum.ScaleType.Slice
+			peepeepoopoo_2.SliceCenter = Rect.new(100, 100, 100, 100)
+			peepeepoopoo_2.SliceScale = 0.060
+
+			effect_2.Name = "effect"
+			effect_2.Parent = Button_2
+			effect_2.AnchorPoint = Vector2.new(0.5, 0.5)
+			effect_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			effect_2.BackgroundTransparency = 1.000
+			effect_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+			effect_2.Size = UDim2.new(1, -8, 1, -8)
+			effect_2.Image = "rbxassetid://3570695787"
+			effect_2.ImageColor3 = Color3.fromRGB(75, 91, 148)
+			effect_2.ScaleType = Enum.ScaleType.Slice
+			effect_2.SliceCenter = Rect.new(100, 100, 100, 100)
+			effect_2.SliceScale = 0.060
+			local function tween(args)
+				game:GetService("TweenService"):Create(args.object,TweenInfo.new(args.info),args.props):Play()
+			end
+			Button_2.MouseButton1Click:Connect(function() callback()
+				tween({object=effect_2,info=0.3,props={Size=UDim2.new(1,8,1,8)}})wait(0.2)tween({object=effect_2,info=0.1,props={Size=UDim2.new(1,-4,1,-4)}})wait(0.1)effect_2.Size = UDim2.new(1,-8,1,-8)
+			end)
+			Section.Size = Section.Size + UDim2.new(0,0,0,30)
+			Page_2.CanvasSize = Page_2.CanvasSize + UDim2.new(0,0,0,15)
+		end
+		function sect:Box(name, options, callback) --type, default, data, location, flag)
+			local type   = options.type or "";
+			local default = options.default or "";
+			local data = options.data
+			local location = options.location or tab.flags;
+			local flag     = options.flag or "";
+			local callback = callback or function() end;
+			local min      = options.min or 0;
+			local max      = options.max or 9e9;
+
+			local Box = Instance.new("TextButton")
+			local Boxtext = Instance.new("TextLabel")
+			local Box_2 = Instance.new("TextBox")
+			Box.Name = name
+			Box.Parent = Section
+			Box.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Box.BackgroundTransparency = 1.000
+			Box.BorderSizePixel = 0
+			Box.Size = UDim2.new(1, 0, 0, 24)
+			Box.AutoButtonColor = false
+			Box.Font = Enum.Font.SourceSans
+			Box.Text = ""
+			Box.TextColor3 = Color3.fromRGB(0, 0, 0)
+			Box.TextSize = 14.000
+
+			Boxtext.Name = "Box text"
+			Boxtext.Parent = Box
+			Boxtext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Boxtext.BackgroundTransparency = 1.000
+			Boxtext.BorderSizePixel = 0
+			Boxtext.Size = UDim2.new(0, 200, 1, 0)
+			Boxtext.ZIndex = 3
+			Boxtext.Font = Enum.Font.Highway
+			Boxtext.Text = name
+			Boxtext.TextColor3 = Color3.fromRGB(214, 222, 234)
+			Boxtext.TextSize = 12.000
+			Boxtext.TextXAlignment = Enum.TextXAlignment.Left
+
+			Box_2.Name = "Box"
+			Box_2.Parent = Boxtext
+			Box_2.Active = false
+			Box_2.AnchorPoint = Vector2.new(0, 0.5)
+			Box_2.BackgroundColor3 = Color3.fromRGB(61, 58, 61)
+			Box_2.BorderSizePixel = 0
+			Box_2.Position = UDim2.new(0.75, 0, 0.5, 0)
+			Box_2.Selectable = false
+			Box_2.Size = UDim2.new(0, 100, 1, 0)
+			Box_2.PlaceholderText = ""
+			Box_2.Text = options.default
+			Box_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Box_2.TextSize = 6.000
+			Box_2.TextWrapped = true
+			
+			Box_2.FocusLost:connect(function(e)
+				local old = location[flag];
+				if type == "number" then
+					local num = tonumber(Box_2.Text)
+					if (not num) then
+						Box_2.Text = tonumber(location[flag])
+					else
+						location[flag] = math.clamp(num, min, max)
+						Box_2.Text = tonumber(location[flag])
+					end
+				else
+					location[flag] = tostring(Box_2.Text)
+				end
+
+				callback(location[flag], old, e)
+			end)
+
+			if type == 'number' then
+				Box_2:GetPropertyChangedSignal('Text'):connect(function()
+					Box_2.Text = string.gsub(Box_2.Text, "[%a+]", "");
+				end)
+			end
+			Section.Size = Section.Size + UDim2.new(0,0,0,30)
+			Page_2.CanvasSize = Page_2.CanvasSize + UDim2.new(0,0,0,15)
+		end
+		function sect:Dropdown(name, options, callback)
+			local location = options.location or tab.flags;
+			local flag = options.flag or "";
+			local callback = callback or function() end;
+			local list = options.list or {};
+
+			location[flag] = list[1]
+			local Dropdown = Instance.new("TextButton")
+			local Droptext = Instance.new("TextLabel")
+			local DropBtn = Instance.new("TextButton")
+			local List = Instance.new("ScrollingFrame")
+			local UIListLayout_5 = Instance.new("UIListLayout")
+			Dropdown.Name = name
+			Dropdown.Parent = Section
+			Dropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Dropdown.BackgroundTransparency = 1.000
+			Dropdown.BorderSizePixel = 0
+			Dropdown.Size = UDim2.new(1, 0, 0, 24)
+			Dropdown.AutoButtonColor = false
+			Dropdown.Font = Enum.Font.SourceSans
+			Dropdown.Text = ""
+			Dropdown.TextColor3 = Color3.fromRGB(0, 0, 0)
+			Dropdown.TextSize = 14.000
+
+			Droptext.Name = "Drop text"
+			Droptext.Parent = Dropdown
+			Droptext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Droptext.BackgroundTransparency = 1.000
+			Droptext.BorderSizePixel = 0
+			Droptext.Size = UDim2.new(0, 200, 1, 0)
+			Droptext.ZIndex = 3
+			Droptext.Font = Enum.Font.Highway
+			Droptext.Text = name
+			Droptext.TextColor3 = Color3.fromRGB(214, 222, 234)
+			Droptext.TextSize = 12.000
+			Droptext.TextXAlignment = Enum.TextXAlignment.Left
+
+			DropBtn.Name = "DropBtn"
+			DropBtn.Parent = Droptext
+			DropBtn.Active = false
+			DropBtn.AnchorPoint = Vector2.new(0, 0.5)
+			DropBtn.BackgroundColor3 = Color3.fromRGB(61, 58, 61)
+			DropBtn.BorderSizePixel = 0
+			DropBtn.Position = UDim2.new(0.75, 0, 0.5, 0)
+			DropBtn.Selectable = false
+			DropBtn.Size = UDim2.new(0, 100, 1, 0)
+			DropBtn.AutoButtonColor = false
+			DropBtn.Text = ""
+			DropBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+			DropBtn.TextSize = 6.000
+			DropBtn.TextWrapped = true
+
+			List.Name = "List"
+			List.Parent = DropBtn
+			List.Active = true
+			List.BackgroundColor3 = Color3.fromRGB(61, 58, 61)
+			List.BorderSizePixel = 0
+			List.Position = UDim2.new(0, 0, 1, -4)
+			List.Selectable = false
+			List.Size = UDim2.new(1, 0, 0, 0)
+			List.ZIndex = 4
+			List.CanvasSize = UDim2.new(0, 0, 1, 0)
+			List.ScrollBarThickness = 0
+
+			UIListLayout_5.Parent = List
+			UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+			local togged = false
+			local function d(a,b,c)
+				game:GetService("TweenService"):Create(a,TweenInfo.new(b),c):Play()
+			end
+			local e = DropBtn
+			local f = List
+			local g = 0
+			local h = "N/A"
+			e.Text=h
+			for i,v in pairs(options.list) do
+				local Option1 = Instance.new("TextButton")
+				Option1.Name = v
+				Option1.Parent = List
+				Option1.BackgroundColor3 = Color3.fromRGB(61, 58, 61)
+				Option1.BorderSizePixel = 0
+				Option1.Size = UDim2.new(1, 0, 0, 24)
+				Option1.ZIndex = 5
+				Option1.AutoButtonColor = false
+				Option1.Font = Enum.Font.Highway
+				Option1.Text = v
+				Option1.TextColor3 = Color3.fromRGB(175, 183, 198)
+				Option1.TextSize = 12.000
+			end
+			for i,v in pairs(f:GetChildren()) do
+				if v:IsA("TextButton") then
+					g = g + 1
+				end
+			end
+			Dropdown.MouseButton1Click:Connect(function()
+				if togged then
+					togged = false
+					e.Text = h
+					d(f,0.3,{Size=UDim2.new(1,0,0,0)})
+				else
+					togged = true
+					if g > 4 then
+						d(f,0.3,{Size=UDim2.new(1,0,0,24*4)})
+						e.Text="..."
+						d(f,0.3,{CanvasSize=UDim2.new(1,0,0,24*g)})
+					else
+						d(f,0.3,{Size=UDim2.new(1,0,0,24*g)})
+						e.Text="..."
+						d(f,0.3,{CanvasSize=UDim2.new(1,0,0,24*g)})
+					end
+					for i,v in pairs(f:GetChildren()) do
+						if v:IsA("TextButton") then
+							v.MouseButton1Click:Connect(function()
+								togged = false
+								h=v.Name
+								e.Text = h
+								d(f,0.3,{Size=UDim2.new(1,0,0,0)})
+							end)
+						end
+					end
+				end
+			end)
+			Section.Size = Section.Size + UDim2.new(0,0,0,30)
+			Page_2.CanvasSize = Page_2.CanvasSize + UDim2.new(0,0,0,15)
+		end
+		function sect:Slider(name, options, callback)
+			local default = options.default or options.min;
+			local min     = options.min or 0;
+			local max      = options.max or 100;
+			local location = options.location or tab.flags;
+			local flag     = options.flag or "";
+			local callback = callback or function() end
+
+			location[flag] = default;
+			
+			local Slider = Instance.new("TextButton")
+			local Slidertext_2 = Instance.new("TextLabel")
+			local Slider_2 = Instance.new("TextButton")
+			local Inner = Instance.new("TextButton")
+			Slider.Name = name
+			Slider.Parent = Section
+			Slider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Slider.BackgroundTransparency = 1.000
+			Slider.BorderSizePixel = 0
+			Slider.Size = UDim2.new(1, 0, 0, 24)
+			Slider.AutoButtonColor = false
+			Slider.Font = Enum.Font.SourceSans
+			Slider.Text = ""
+			Slider.TextColor3 = Color3.fromRGB(0, 0, 0)
+			Slider.TextSize = 14.000
+
+			Slidertext_2.Name = "Slider text"
+			Slidertext_2.Parent = Slider
+			Slidertext_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Slidertext_2.BackgroundTransparency = 1.000
+			Slidertext_2.BorderSizePixel = 0
+			Slidertext_2.Size = UDim2.new(0, 200, 0, 18)
+			Slidertext_2.ZIndex = 3
+			Slidertext_2.Font = Enum.Font.Highway
+			Slidertext_2.Text = name
+			Slidertext_2.TextColor3 = Color3.fromRGB(214, 222, 234)
+			Slidertext_2.TextSize = 12.000
+			Slidertext_2.TextXAlignment = Enum.TextXAlignment.Left
+
+			Slider_2.Name = "Slider"
+			Slider_2.Parent = Slidertext_2
+			Slider_2.Active = false
+			Slider_2.AnchorPoint = Vector2.new(0, 0.5)
+			Slider_2.BackgroundColor3 = Color3.fromRGB(61, 58, 61)
+			Slider_2.BorderSizePixel = 0
+			Slider_2.Position = UDim2.new(0.700000048, 0, 0.5, 0)
+			Slider_2.Selectable = false
+			Slider_2.Size = UDim2.new(0, 110, 0, 8)
+			Slider_2.AutoButtonColor = false
+			Slider_2.Text = ""
+			Slider_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+			Inner.Name = "Inner"
+			Inner.Parent = Slider_2
+			Inner.Active = false
+			Inner.BackgroundColor3 = Color3.fromRGB(85, 81, 85)
+			Inner.BorderSizePixel = 0
+			Inner.Selectable = false
+			Inner.Size = UDim2.new(0, 0, 1, 0)
+			Inner.AutoButtonColor = false
+			Inner.Text = ""
+			local Number = Inner
+			local mouse = game.Players.LocalPlayer:GetMouse()
+			local uis = game:GetService("UserInputService")
+			local Value;
+			local down = false
+			if default ~= min then
+				game:GetService("TweenService"):Create(Inner, TweenInfo.new(0.05), {Size = UDim2.new(default/max, 0, 0, 8)}):Play()
+				Inner.Text = default
+			end
+			local function Activate()
+				spawn(function()
+					down = true
+					Value = math.floor((((tonumber(max) - tonumber(min)) / 110) * Inner.AbsoluteSize.X) +tonumber(min)) or 0
+					pcall(function()
+						callback(tonumber(Value))
+						location[flag] = tonumber(Value)
+					end)
+					Number.Text = Value     
+					game:GetService("TweenService"):Create(Inner, TweenInfo.new(0.05), {Size = UDim2.new(0, math.clamp(mouse.X - Inner.AbsolutePosition.X, 0, 110), 0, 8)}):Play()
+					game:GetService("TweenService"):Create(Inner, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(113, 117, 124)}):Play()
+					while game:GetService("RunService").RenderStepped:wait() and down do
+						Value = math.floor((((tonumber(max) - tonumber(min)) / 110) * Inner.AbsoluteSize.X) +tonumber(min)) or 0
+						Number.Text = Value               
+						pcall(function()
+							callback(tonumber(Value))
+							location[flag] = tonumber(Value)
+						end)
+						game:GetService("TweenService"):Create(Inner, TweenInfo.new(0.05), {Size = UDim2.new(0, math.clamp(mouse.X - Inner.AbsolutePosition.X, 0, 110), 0, 8)}):Play()
+						game:GetService("TweenService"):Create(Inner, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(113, 117, 124)}):Play()
+					end
+				end)
+			end
+			Inner.MouseButton1Down:Connect(function()
+				Activate()
+			end)
+			Slider_2.MouseButton1Down:Connect(function()
+				Activate()
+			end)
+			uis.InputEnded:connect(function(key)
+				if key.UserInputType == Enum.UserInputType.MouseButton1 and down then
+					down = false
+					Value = math.floor((((tonumber(max) - tonumber(min)) / 110) * Inner.AbsoluteSize.X) +tonumber(min)) or 0
+					Number.Text = Value     
+					pcall(function()
+						callback(tonumber(Value))
+						location[flag] = tonumber(Value)
+					end)
+					game:GetService("TweenService"):Create(Inner, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(85, 81, 85)}):Play()
+					--game:GetService("TweenService"):Create(Inner, TweenInfo.new(0.05), {Size = UDim2.new(0, math.clamp(mouse.X - Inner.AbsolutePosition.X, 0, 110), 0, 8)}):Play()
+				end        
+			end)
+			Section.Size = Section.Size + UDim2.new(0,0,0,30)
+			Page_2.CanvasSize = Page_2.CanvasSize + UDim2.new(0,0,0,15)
+		end
+		function sect:Bind(name, options, callback)
+			local location     = options.location or tab.flags;
+			local keyboardOnly = options.kbonly or false
+			local flag         = options.flag or "";
+			local callback     = callback or function() end;
+			local default      = options.default;
+			local Bind_3 = Instance.new("TextButton")
+			local Bindtext_2 = Instance.new("TextLabel")
+			local Bind_4 = Instance.new("TextButton")
+			Bind_3.Name = name
+			Bind_3.Parent = Section
+			Bind_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Bind_3.BackgroundTransparency = 1.000
+			Bind_3.BorderSizePixel = 0
+			Bind_3.Size = UDim2.new(1, 0, 0, 24)
+			Bind_3.AutoButtonColor = false
+			Bind_3.Font = Enum.Font.SourceSans
+			Bind_3.Text = ""
+			Bind_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+			Bind_3.TextSize = 14.000
+
+			Bindtext_2.Name = "Bind text"
+			Bindtext_2.Parent = Bind_3
+			Bindtext_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Bindtext_2.BackgroundTransparency = 1.000
+			Bindtext_2.BorderSizePixel = 0
+			Bindtext_2.Size = UDim2.new(0, 200, 1, 0)
+			Bindtext_2.ZIndex = 3
+			Bindtext_2.Font = Enum.Font.Highway
+			Bindtext_2.Text = name
+			Bindtext_2.TextColor3 = Color3.fromRGB(214, 222, 234)
+			Bindtext_2.TextSize = 12.000
+			Bindtext_2.TextXAlignment = Enum.TextXAlignment.Left
+
+			Bind_4.Name = "Bind"
+			Bind_4.Parent = Bindtext_2
+			Bind_4.Active = false
+			Bind_4.AnchorPoint = Vector2.new(0, 0.5)
+			Bind_4.BackgroundColor3 = Color3.fromRGB(61, 58, 61)
+			Bind_4.BorderSizePixel = 0
+			Bind_4.Position = UDim2.new(0.75, 0, 0.5, 0)
+			Bind_4.Selectable = false
+			Bind_4.Size = UDim2.new(0, 100, 1, 0)
+			Bind_4.AutoButtonColor = false
+			Bind_4.Text = ""
+			Bind_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Bind_4.TextSize = 6.000
+			Bind_4.TextWrapped = true
+
+			local binding = false
+			local banned = {
+				Return = true;
+				Space = true;
+				Tab = true;
+				Unknown = true;
+			}
+
+			local shortNames = {
+				RightControl = 'RightCtrl';
+				LeftControl = 'LeftCtrl';
+				LeftShift = 'LShift';
+				RightShift = 'RShift';
+				MouseButton1 = "LMB";
+				MouseButton2 = "RMB";
+			}
+
+			local allowed = {
+				MouseButton1 = true;
+				MouseButton2 = true;
+			}      
+
+			local nm = (default and (shortNames[default.Name] or default.Name) or "None");
+			Bind_3.MouseButton1Click:connect(function()
+				binding = true
+
+				Bind_4.Text = "..."
+				local a, b = game:GetService('UserInputService').InputBegan:wait();
+				local name = tostring(a.KeyCode.Name);
+				local typeName = tostring(a.UserInputType.Name);
+
+				if (a.UserInputType ~= Enum.UserInputType.Keyboard and (allowed[a.UserInputType.Name]) and (not keyboardOnly)) or (a.KeyCode and (not banned[a.KeyCode.Name])) then
+					local name = (a.UserInputType ~= Enum.UserInputType.Keyboard and a.UserInputType.Name or a.KeyCode.Name);
+					Bind_4.Text = shortNames[name] or name;
+					location[flag] = (a);
+
+				end
+				wait(0.1)  
+				binding = false;
+			end)
+			Bind_4.MouseButton1Click:Connect(function()
+				binding = true
+
+				Bind_4.Text = "..."
+				local a, b = game:GetService('UserInputService').InputBegan:wait();
+				local name = tostring(a.KeyCode.Name);
+				local typeName = tostring(a.UserInputType.Name);
+
+				if (a.UserInputType ~= Enum.UserInputType.Keyboard and (allowed[a.UserInputType.Name]) and (not keyboardOnly)) or (a.KeyCode and (not banned[a.KeyCode.Name])) then
+					local name = (a.UserInputType ~= Enum.UserInputType.Keyboard and a.UserInputType.Name or a.KeyCode.Name);
+					Bind_4.Text = shortNames[name] or name;
+					location[flag] = (a);
+
+				end
+				wait(0.1)  
+				binding = false;
+			end)
+			Section.Size = Section.Size + UDim2.new(0,0,0,30)
+			Page_2.CanvasSize = Page_2.CanvasSize + UDim2.new(0,0,0,15)
+		end
+		return sect;
+	end
+	return tab;
+end
+local function TLRXB_fake_script() -- Bind.LocalScript 
+	local script = Instance.new('LocalScript', Bind)
+
+	local options = {}
+	local keyboardOnly = options.kbonly or true
+	local flag         = options.flag or "";
+	local default      = Enum.KeyCode.RightControl
+	_G.Opencode=Enum.KeyCode.RightControl
+	local binding = false
+	local banned = {
+		Return = true;
+		Space = true;
+		Tab = true;
+		Unknown = true;
+	}
+	
+	local shortNames = {
+		RightControl = 'RightCtrl';
+		LeftControl = 'LeftCtrl';
+		LeftShift = 'LShift';
+		RightShift = 'RShift';
+		MouseButton1 = "LMB";
+		MouseButton2 = "RMB";
+	}
+	
+	local allowed = {
+		MouseButton1 = true;
+		MouseButton2 = true;
+	}      
+	
+	local nm = (default and (shortNames[default.Name] or default.Name) or "None");
+	script.Parent.MouseButton1Click:connect(function()
+		binding = true
+	
+		script.Parent["Bind text"].Bind.Text = "..."
+		local a, b = game:GetService('UserInputService').InputBegan:wait();
+		local name = tostring(a.KeyCode.Name);
+		local typeName = tostring(a.UserInputType.Name);
+	
+		if (a.UserInputType ~= Enum.UserInputType.Keyboard and (allowed[a.UserInputType.Name]) and (not keyboardOnly)) or (a.KeyCode and (not banned[a.KeyCode.Name])) then
+			local name = (a.UserInputType ~= Enum.UserInputType.Keyboard and a.UserInputType.Name or a.KeyCode.Name);
+				script.Parent["Bind text"].Bind.Text = shortNames[name] or name;
+			
+			
+		end
+		wait(0.1)  
+		binding = false;
+	end)
+	script.Parent["Bind text"].Bind.MouseButton1Click:Connect(function()
+		binding = true
+	
+		script.Parent["Bind text"].Bind.Text = "..."
+		local a, b = game:GetService('UserInputService').InputBegan:wait();
+		local name = tostring(a.KeyCode.Name);
+		local typeName = tostring(a.UserInputType.Name);
+	
+		if (a.UserInputType ~= Enum.UserInputType.Keyboard and (allowed[a.UserInputType.Name]) and (not keyboardOnly)) or (a.KeyCode and (not banned[a.KeyCode.Name])) then
+			local name = (a.UserInputType ~= Enum.UserInputType.Keyboard and a.UserInputType.Name or a.KeyCode.Name);
+			script.Parent["Bind text"].Bind.Text = shortNames[name] or name;
+			_G.Opencode=a.KeyCode
+	
+		end
+		wait(0.1)  
+		binding = false;
+	end)
+end
+coroutine.wrap(TLRXB_fake_script)()
+local function JFCBIGB_fake_script() -- Button.LocalScript 
+	local script = Instance.new('LocalScript', Button)
+
+	local function tween(args)
+		game:GetService("TweenService"):Create(args.object,TweenInfo.new(args.info),args.props):Play()
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		if loadstring then
+		loadstring(game:HttpGet('https://dogix.wtf/scripts/libraries/discord.lua'))('9tXMK7bzMz')
+		tween({object=script.Parent.effect,info=0.3,props={Size=UDim2.new(1,8,1,8)}})wait(0.2)tween({object=script.Parent.effect,info=0.1,props={Size=UDim2.new(1,-4,1,-4)}})wait(0.1)script.Parent.effect.Size = UDim2.new(1,-8,1,-8)
+		else
+			print("How did you even execute this?")
+		end
+	end)
+	
+end
+coroutine.wrap(JFCBIGB_fake_script)()
+local function TORSJLL_fake_script() -- C0NLE.Hide/show 
+	local script = Instance.new('LocalScript', C0NLE)
+
+	local UIS = game:GetService("UserInputService")
+	local shown = true;
+	local function tween(ob,args,props)
+		game:GetService("TweenService"):Create(ob,TweenInfo.new(args),props):Play()
+	end
+	UIS.InputBegan:Connect(function(key) 
+		if key.KeyCode == _G.Opencode then
+			if shown == true then
+				tween(script.Parent.Main,0.4,{Size = UDim2.new(0,675,0,16)})wait(0.3)
+				tween(script.Parent.Main.Top,0.3,{Size = UDim2.new(0,90,0,18)})script.Parent.Main.Top.Bind.Visible=false;tween(script.Parent.Main,0.3,{Size = UDim2.new(0,90,0,16)})wait(0.3)script.Parent.Main.Top.Fix.Visible = false;wait(0.1)
+				shown = false
+			else
+				tween(script.Parent.Main,0.3,{Size = UDim2.new(0,675,0,16)})
+				tween(script.Parent.Main.Top,0.3,{Size = UDim2.new(0,675,0,19)})script.Parent.Main.Top.Bind.Visible=true;script.Parent.Main.Top.Fix.Visible = true;wait(0.3);tween(script.Parent.Main,0.3,{Size = UDim2.new(0,675,0,353)})wait(0.1)
+				shown = true
+			end
+		end
+	end)
+	spawn(function()
+		while wait() do
+			if shown == false then
+				tween(script.Parent.Main.Top.Title,0.8,{TextColor3 = Color3.fromRGB(255,255,255)})wait(1.2)
+				tween(script.Parent.Main.Top.Title,0.8,{TextColor3 = Color3.fromRGB(114, 118, 125)})wait(0.8)
+			end
+		end
+	end)
+end
+coroutine.wrap(TORSJLL_fake_script)()
+function library:SetActive(page)
+	local function tween(ob,args,props)
+		game:GetService("TweenService"):Create(ob,TweenInfo.new(args),props):Play()
+	end
+	for i,v in pairs(Pages:GetChildren()) do
+		v.Visible = false
+	end
+	for p,g in pairs(Menu:GetChildren()) do
+		if g:IsA("TextButton") then tween(g,0.3,{TextColor3 = Color3.fromRGB(99, 104, 114)})end
+	end
+	print(page)
+	Main.Pages[page].Visible = true
+	tween(Menu[page],0.3,{TextColor3 = Color3.fromRGB(255,255,255)})wait(0.3)
+end
+function library:Reload()
+	local function tween(ob,args,props)
+		game:GetService("TweenService"):Create(ob,TweenInfo.new(args),props):Play()
+	end
+	for i,v in pairs(Menu:GetChildren()) do
+		for x,d in pairs(Pages:GetChildren()) do
+			if d.Visible == true and v.Name == d.Name then tween(v,0.3,{TextColor3 = Color3.fromRGB(255,255,255)})wait(0.3) end 
+			if v.Name == d.Name then
+				v.MouseEnter:Connect(function()
+					if d.Visible == false then
+					tween(v,0.3,{TextColor3 = Color3.fromRGB(255,255,255)})wait(0.3) end
+				end)
+				v.MouseLeave:Connect(function()
+					if d.Visible == false then
+					tween(v,0.3,{TextColor3 = Color3.fromRGB(99, 104, 114)})wait(0.3) end
+				end)
+				v.MouseButton1Click:Connect(function()
+					for p,g in pairs(Pages:GetChildren()) do
+						g.Visible = false
+					end
+					for p,g in pairs(Menu:GetChildren()) do
+						if g:IsA("TextButton")and g~=v then tween(g,0.3,{TextColor3 = Color3.fromRGB(99, 104, 114)})end
+					end
+					d.Visible = true
+				end)
+			end
+		end
+	end
+end
+spawn(function()
+		while wait() do
+		if C0NLE:FindFirstChild("Watermark") == nil then
+				game.Players.LocalPlayer:Kick("Kicked by C0N$ØLE \n NO WATERMARK = NO UI")
+			end
+		if C0NLE:FindFirstChild("Watermark").Visible == false then
+				game.Players.LocalPlayer:Kick("Kicked by C0N$ØLE \n NO WATERMARK = NO UI")
+			end
+		if C0NLE:FindFirstChild("Watermark").Position ~= UDim2.new(0.00528455153, 0, -0.000239789762, 0) then
+				game.Players.LocalPlayer:Kick("Kicked by C0N$ØLE \n NO WATERMARK = NO UI")
+			end
+		if C0NLE:FindFirstChild("Watermark").Size ~= UDim2.new(0, 434, 0, 55) then
+				game.Players.LocalPlayer:Kick("Kicked by C0N$ØLE \n NO WATERMARK = NO UI")
+			end
+			if C0NLE:FindFirstChild("Watermark").TextSize ~= 19.000 then
+				game.Players.LocalPlayer:Kick("Kicked by C0N$ØLE \n NO WATERMARK = NO UI")
+			end
+		end
+	C0NLE:FindFirstChild("Watermark"):GetPropertyChangedSignal("Text"):Connect(function()
+		C0NLE:FindFirstChild("Watermark").Text = "(C0N$ØLE) by TheNonGamerIsHere#4698 / SlaxxF#0001"
+	end)
+end)
+local function HPAFQ_fake_script() -- C0NLE.Drag 
+	local script = Instance.new('LocalScript', C0NLE)
+
+	local dragger = {}; 
+		local mouse        = game:GetService("Players").LocalPlayer:GetMouse();
+		local inputService = game:GetService('UserInputService');
+		local heartbeat    = game:GetService("RunService").Heartbeat;
+		-- // credits to Ririchi / Inori for this cute drag function :)
+		function dragger.new(frame)
+			local s, event = pcall(function()
+				return frame.MouseEnter
+			end)
+	
+			if s then
+				frame.Active = true;
+	
+				event:connect(function()
+					local input = frame.InputBegan:connect(function(key)
+						if key.UserInputType == Enum.UserInputType.MouseButton1 then
+							local objectPosition = Vector2.new(mouse.X - frame.AbsolutePosition.X, mouse.Y - frame.AbsolutePosition.Y);
+							while heartbeat:wait() and inputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
+								pcall(function()
+									frame:TweenPosition(UDim2.new(0, mouse.X - objectPosition.X, 0, mouse.Y - objectPosition.Y), 'Out', 'Linear', 0.1, true);
+								end)
+							end
+						end
+					end)
+	
+					local leave;
+					leave = frame.MouseLeave:connect(function()
+						input:disconnect();
+						leave:disconnect();
+					end)
+				end)
+			end
+		end
+		dragger.new(script.Parent.Main)
+end
+coroutine.wrap(HPAFQ_fake_script)()
+return library;
