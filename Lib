@@ -398,14 +398,14 @@ local Title_2 = Instance.new("TextLabel")
 				location[flag] = not location[flag];
 				callback(location[flag])
 			end
-			local tog = false
+			local tog = default
 			local function tween(args)
 				game:GetService("TweenService"):Create(args.object,TweenInfo.new(args.info),args.props):Play()
 			end
 			if default == true then
-				tog = false
-				tween({object=ToggleBTN,info=0.3,props={BackgroundColor3 = Color3.fromRGB(122, 116, 122)}})
-				tween({object=ToggleBTNiner,info=0.3,props={BackgroundColor3 = Color3.fromRGB(61, 58, 61)}})
+				tog = true
+					tween({object=ToggleBTN,info=0.3,props={BackgroundColor3 = Color3.fromRGB(61, 58, 61)}})
+					tween({object=ToggleBTNiner,info=0.3,props={BackgroundColor3 = Color3.fromRGB(35, 43, 70)}})
 			end
 			local function toggle()
 				if tog then tog = false
